@@ -4,11 +4,17 @@ apply plugin: 'maven-publish'
 afterEvaluate {
     publishing {
         publications {
-            release(MavenPublication) {
+            maven(MavenPublication) {
                 groupId = 'org.afree'
                 artifactId = 'afreechart'
                 version = '0.0.5'
-                artifact(bundleReleaseAar)
+                if (project.plugins.hasPlugin('java')) {
+                    from components.java
+                }
+
+                pom {
+                    description = 'afreechart library'
+                }
             }
         }
     }
