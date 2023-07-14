@@ -1,1 +1,1 @@
-include ':afreechart', ':afreechart_sample'
+include ':afreechart'
