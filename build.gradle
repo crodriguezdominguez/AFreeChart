@@ -11,6 +11,16 @@ buildscript {
     }
 }
 
+allprojects {
+    repositories {
+        // The order in which you list these repositories matter.
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
 wrapper {
     gradleVersion = '7.4.2'
 }
