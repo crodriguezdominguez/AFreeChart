@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!DOCTYPE manifest [
-    <!ENTITY CATEGORY_NAME "org.afree.chart.demo">
-]>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:tools="http://schemas.android.com/tools"
       package="org.afree.chart"
@@ -27,28 +22,28 @@
             android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="&CATEGORY_NAME;" />
+                <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.BarChartDemo01Activity"
             android:label="Bar Chart Demo 01">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="&CATEGORY_NAME;" />
+                <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.SlidingCategoryPlotDemo01Activity"
             android:label="Sliding Chart Demo 01">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="&CATEGORY_NAME;" />
+                <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.SlidingCategoryPlotDemo02Activity"
             android:label="Sliding Chart Demo 02">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="&CATEGORY_NAME;" />
+                <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.CandleStickChartDemo03Activity"
@@ -56,7 +51,7 @@
             android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="&CATEGORY_NAME;" />
+                <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.DeviationRendererDemo02Activity"
@@ -64,7 +59,7 @@
             android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="&CATEGORY_NAME;" />
+                <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.MarkerDemo01Activity"
@@ -72,7 +67,7 @@
             android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="&CATEGORY_NAME;" />
+                <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.OverlaidXYPlotDemo02Activity"
@@ -80,14 +75,14 @@
             android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="&CATEGORY_NAME;" />
+                <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.PieChartDemo01Activity"
             android:label="Pie Chart Demo 01">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="&CATEGORY_NAME;" />
+                <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.ScatterPlotDemo03Activity"
@@ -95,14 +90,14 @@
             android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="&CATEGORY_NAME;" />
+                <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.TimeSeriesChartDemo01Activity"
             android:label="Time Series Demo 01">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="&CATEGORY_NAME;" />
+                <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
     </application>

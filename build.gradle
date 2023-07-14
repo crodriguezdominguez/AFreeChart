@@ -2,14 +2,15 @@
 
 buildscript {
     repositories {
+        google()
+        jcenter()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.12.2'
-        classpath 'com.github.dcendents:android-maven-plugin:1.0'
+        classpath 'com.android.tools.build:gradle:7.4.2'
     }
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '1.12'
+wrapper {
+    gradleVersion = '7.4.2'
 }
