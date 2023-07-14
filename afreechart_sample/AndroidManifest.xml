@@ -5,12 +5,12 @@
       android:versionCode="1"
       android:versionName="1.0">
 
-    <application android:icon="@drawable/icon" android:label="@string/app_name"
-        android:debuggable="true">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
         <uses-library android:name="android.test.runner" />
         <!-- Demo activity -->
         <activity android:name=".demo.ChartHierarchyActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -19,28 +19,32 @@
 
         <activity android:name=".demo.activity.AnnotationDemo01Activity"
             android:label="Annotation Demo 01"
-            android:configChanges="orientation|keyboardHidden">
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.BarChartDemo01Activity"
-            android:label="Bar Chart Demo 01">
+            android:label="Bar Chart Demo 01"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.SlidingCategoryPlotDemo01Activity"
-            android:label="Sliding Chart Demo 01">
+            android:label="Sliding Chart Demo 01"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.SlidingCategoryPlotDemo02Activity"
-            android:label="Sliding Chart Demo 02">
+            android:label="Sliding Chart Demo 02"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="org.afree.chart.demo" />
@@ -48,7 +52,8 @@
         </activity>
         <activity android:name=".demo.activity.CandleStickChartDemo03Activity"
             android:label="Candle Stick Chart Demo 03"
-            android:configChanges="orientation|keyboardHidden">
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="org.afree.chart.demo" />
@@ -56,7 +61,8 @@
         </activity>
         <activity android:name=".demo.activity.DeviationRendererDemo02Activity"
             android:label="Deviation Renderer Demo 02"
-            android:configChanges="orientation|keyboardHidden">
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="org.afree.chart.demo" />
@@ -64,7 +70,8 @@
         </activity>
         <activity android:name=".demo.activity.MarkerDemo01Activity"
             android:label="Marker Demo 01"
-            android:configChanges="orientation|keyboardHidden">
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="org.afree.chart.demo" />
@@ -72,14 +79,16 @@
         </activity>
         <activity android:name=".demo.activity.OverlaidXYPlotDemo02Activity"
             android:label="Overlaid XY Plot Demo 02"
-            android:configChanges="orientation|keyboardHidden">
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.PieChartDemo01Activity"
-            android:label="Pie Chart Demo 01">
+            android:label="Pie Chart Demo 01"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="org.afree.chart.demo" />
@@ -87,25 +96,20 @@
         </activity>
         <activity android:name=".demo.activity.ScatterPlotDemo03Activity"
             android:label="Scatter Plot Demo 03"
-            android:configChanges="orientation|keyboardHidden">
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
         <activity android:name=".demo.activity.TimeSeriesChartDemo01Activity"
-            android:label="Time Series Demo 01">
+            android:label="Time Series Demo 01"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="org.afree.chart.demo" />
             </intent-filter>
         </activity>
     </application>
-
-    <uses-sdk android:minSdkVersion="7" />
-    <instrumentation
-        android:targetPackage="org.afree.chart"
-        android:name="android.test.InstrumentationTestRunner"
-        tools:replace="android:targetPackage" />
-
 </manifest>
